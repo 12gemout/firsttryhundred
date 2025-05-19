@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float Example</title>
+  <style>
+    .container {
+      border: 2px solid #000;
+      padding: 10px;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      line-height: 100px;
+    }
+    .left {
+      float: left;
+      background-color: #4CAF50; /* 绿色 */
+    }
+    .right {
+      float: right;
+      background-color: #2196F3; /* 蓝色 */
+    }
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+  <div class="container clearfix">
+    <div class="box left">Left Box</div>
+    <div class="box right">Right Box</div>
+  </div>
+</body>
+</html>
